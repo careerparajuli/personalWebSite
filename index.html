@@ -1,353 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujjwal Parajuli</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ujjwal Parajuli is a cleared Power Platform developer who builds secure workflow and data solutions for defense programs.">
+  <meta name="theme-color" content="#07111f">
+  <title>Ujjwal Parajuli | Power Platform Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#index">Home</a></li>
-                <li><a href="#experiences">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#others">Other</a></li>
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Ujjwal Parajuli, home">
+        <span class="brand-mark">UP</span>
+        <span>Ujjwal Parajuli</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="mailto:career.parajuli@gmail.com">Let’s talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Active Secret Clearance</div>
+        <h1 id="hero-title">I turn complex government work into <span>clear, secure digital systems.</span></h1>
+        <p class="hero-lede">Power Platform Developer building mission-ready apps, automated workflows, and reporting solutions in Microsoft 365 and DoD environments.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View selected work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="mailto:career.parajuli@gmail.com">Email me</a>
+        </div>
+        <div class="trust-row" aria-label="Professional highlights">
+          <span>Power Platform</span>
+          <span>U.S. Army Reserve</span>
+          <span>Security+</span>
+          <span>PL-400</span>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal" aria-label="Professional profile">
+        <div class="hero-card-top">
+          <div class="monogram" aria-hidden="true">UP</div>
+          <span class="availability">Open to mission-focused teams</span>
+        </div>
+        <div class="hero-card-body">
+          <p class="card-label">CURRENT FOCUS</p>
+          <h2>Secure workflow modernization</h2>
+          <p>Replacing manual processes with governed apps, approvals, role-based access, and useful reporting.</p>
+        </div>
+        <div class="hero-card-grid">
+          <div><strong>DEV / TEST / PROD</strong><span>ALM delivery</span></div>
+          <div><strong>DoD Microsoft 365</strong><span>Secure operations</span></div>
+          <div><strong>Power Apps</strong><span>Business applications</span></div>
+          <div><strong>Power Automate</strong><span>Workflow and alerts</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="proof-strip" aria-label="Core capabilities">
+      <div class="section-shell proof-grid">
+        <div><strong>4+</strong><span>production business solutions</span></div>
+        <div><strong>3</strong><span>governed deployment environments</span></div>
+        <div><strong>E-5</strong><span>U.S. Army Reserve Sergeant</span></div>
+        <div><strong>4</strong><span>Microsoft and security certifications</span></div>
+      </div>
+    </section>
+
+    <section class="section section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div><p class="kicker">Selected work</p><h2 id="work-title">Systems built around the mission.</h2></div>
+        <p>My strongest work sits at the intersection of people, process, data, and security. Some project details are limited because the work supports defense programs.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-tags"><span>Power Apps</span><span>Power Automate</span><span>SharePoint</span></div>
+            <h3>Engineering Discrepancy Management</h3>
+            <p>A structured system for submitting, assigning, tracking, and closing engineering issues. Automated reminders scale from long-range milestones to daily overdue notices while a notification log prevents duplicate alerts.</p>
+            <ul class="outcome-list">
+              <li>Role-based access for administrators and access managers</li>
+              <li>Escalation logic across ten deadline windows</li>
+              <li>Auditable status, reminder, and closure history</li>
             </ul>
-        </nav>
-    </header>
-    <main id="index">
-        <! For JavaScript and animation effect-->
-            <div class="typewriter">
-                <p id="typewriter-text"></p>
+          </div>
+          <div class="project-visual workflow-visual" aria-label="Workflow diagram">
+            <div class="flow-node active"><span>01</span>Submit</div>
+            <div class="flow-line"></div>
+            <div class="flow-node"><span>02</span>Assign</div>
+            <div class="flow-line"></div>
+            <div class="flow-node"><span>03</span>Track</div>
+            <div class="flow-line"></div>
+            <div class="flow-node"><span>04</span>Close</div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <div class="project-tags"><span>Power Apps</span><span>PDF Automation</span><span>Microsoft 365</span></div>
+          <h3>Weekly Accomplishments Reporting</h3>
+          <p>Consolidated reporting across multiple technical teams into one guided app, then automated a consistent weekly PDF for leadership.</p>
+          <div class="mini-metric"><strong>One source</strong><span>for multi-team reporting</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">03</div>
+          <div class="project-tags"><span>Dataverse</span><span>ALM</span><span>RBAC</span></div>
+          <h3>Secure Budget Request Workflow</h3>
+          <p>Built a governed request and approval solution with permission-aware experiences, reusable configuration, and controlled DEV, TEST, and PROD releases.</p>
+          <div class="mini-metric"><strong>Governed delivery</strong><span>from idea to production</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">04</div>
+          <div class="project-tags"><span>Power BI</span><span>Data Modeling</span><span>DAX</span></div>
+          <h3>Operational Decision Support</h3>
+          <p>Translated scattered operational data into clean models and decision-ready views, helping program teams see status, ownership, and risk sooner.</p>
+          <div class="mini-metric"><strong>Clear decisions</strong><span>from complex data</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="experience" aria-labelledby="experience-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div><p class="kicker">Experience</p><h2 id="experience-title">Built through service and delivery.</h2></div>
+          <p>My background spans software, government technology, and military leadership. Each role strengthened how I solve problems with discipline and care.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2024 — 2026</div>
+            <div class="timeline-main">
+              <h3>Power Platform Developer</h3>
+              <p class="timeline-org">U.S. defense programs · Contractor</p>
+              <p>Designed and delivered secure Power Apps, Power Automate workflows, SharePoint data solutions, reporting tools, and controlled ALM releases for mission teams.</p>
             </div>
-    </main>
-
-    <main >
-        <section  id="experiences" class="experience-container">
-            <!-- Experience Block 1 -->
-            <div  class="experience-block">
-                <h2 >Full Stack Developer</h2>
-                <p><strong>Duration:</strong> 06/2021 - 11/2022</p>
-                <p><strong>Responsibilities:</strong></p>
-                <ul>
-                    <li>
-                        Developed & deployed a COVID compliance tracker website for small businesses, reduced
-                        violations by 30%, ensuring safety protocols [HTML, CSS, JavaScript, DOM]
-                    </li>
-                    <li>
-                        Conceptualized, developed, and successfully launched FoodRanger, a full-stack web application,
-                        driving a 25% increase in user engagement, 100+ restaurant partnerships, and 95% positive reviews [MERN stack]
-
-                    </li>
-                    <li>
-                        Gained expertise in AI applications, contributing to a 15% reduction in fraud incidents, a 20% 
-                        improvement in spam filtering, and enhanced virtual assistance capabilities
-                    </li>
-                </ul>
+            <div class="timeline-chip">DoD</div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2022 — Present</div>
+            <div class="timeline-main">
+              <h3>Sergeant · Horizontal Construction Engineer</h3>
+              <p class="timeline-org">U.S. Army Reserve</p>
+              <p>Lead soldiers, coordinate work in demanding settings, and uphold clear standards for safety, readiness, and accountability.</p>
             </div>
-
-            <!-- Experience Block 2 -->
-            <div class="experience-block">
-                <h2>U.S. Army - Horizontal Construction Engineer</h2>
-                <p><strong>Duration:</strong> 11/2022 - Present</p>
-                <p><strong>Responsibilities:</strong></p>
-                <ul>
-                    <li>
-                        Demonstrated a proactive problem-solving approach and a track record of delivering 
-                        exceptional results while working in demanding and fast-paced environments
-                    </li>
-                    <li>
-                        Proven ability to collaborate effectively in team-oriented settings, drawing from 
-                        experience in military operations where attention to detail and precision were paramount
-                    </li>
-                </ul>
+            <div class="timeline-chip">E-5</div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2021 — 2022</div>
+            <div class="timeline-main">
+              <h3>Full-Stack Developer</h3>
+              <p class="timeline-org">Software development</p>
+              <p>Built web products with JavaScript, React, Node.js, Express, and MongoDB, developing the software foundation that supports my work today.</p>
             </div>
+            <div class="timeline-chip">MERN</div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section section-shell" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="kicker">About</p>
+          <h2 id="about-title">Technology should make hard work easier to do right.</h2>
+          <p>I’m Ujjwal, a Power Platform developer and Army Reserve Sergeant. I build practical systems for teams that need accuracy, security, and a clear audit trail.</p>
+          <p>My path from Nepal to U.S. public service shaped how I work: stay curious, earn trust, and leave the process better than I found it.</p>
+          <a class="text-link" href="mailto:career.parajuli@gmail.com">Start a conversation <span aria-hidden="true">→</span></a>
+        </div>
 
-             <!-- Experience Block 3 -->
-                        <div class="experience-block">
-                            <h2>Software Developer</h2>
-                            <p><strong>Duration:</strong> 01/2021 - 05/2021</p>
-                            <p><strong>Responsibilities:</strong></p>
-                            <ul>
-                                <li>
-                                    Designed and built an Android application - including features like fuel pick-up and drop-off 
-                                    site information, barcode scanning, customer signature capture, and real-time location sharing
-                                    – to enable seamless communication between private trucking companies and drivers [Java, SQLite, Here API]
-                                </li>
-                            </ul>
-                        </div>
-
-            
-
-            <!-- Experience Block 4 -->
-            <div class="experience-block">
-                <h2>Assembly Line Coordinator</h2>
-                <p><strong>Duration:</strong> 07/2016 - 01/2018</p>
-                <p><strong>Responsibilities:</strong></p>
-                <ul>
-                    <li>
-                        Streamlined Automated Blood Collection with engineering-driven data systems, resulting in a 
-                        20% boost in operational efficiency; implemented data entry, collection, and tracking, aligning
-                        with engineering drawings, resulting in a 25% improvement in accuracy and workflow optimization
-                    </li>
-                </ul>
+        <div class="credentials reveal">
+          <div class="credential-group">
+            <p class="card-label">CERTIFICATIONS</p>
+            <div class="credential-list">
+              <span>Microsoft Power Platform Developer Associate · PL-400</span>
+              <span>Microsoft Power Platform Fundamentals · PL-900</span>
+              <span>Microsoft Azure Fundamentals · AZ-900</span>
+              <span>CompTIA Security+ CE</span>
             </div>
+          </div>
+          <div class="credential-group">
+            <p class="card-label">EDUCATION</p>
+            <div class="education-row"><strong>M.S. Artificial Intelligence &amp; Machine Learning</strong><span>CSU Global · In progress</span></div>
+            <div class="education-row"><strong>B.S. Computer Science</strong><span>University of Louisiana Monroe</span></div>
+          </div>
+          <div class="credential-group">
+            <p class="card-label">CORE TOOLKIT</p>
+            <div class="tool-cloud"><span>Power Apps</span><span>Power Automate</span><span>Power BI</span><span>Dataverse</span><span>SharePoint</span><span>DAX</span><span>JavaScript</span><span>Git</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact-section section-shell reveal" aria-labelledby="contact-title">
+      <p class="kicker">Let’s build something useful</p>
+      <h2 id="contact-title">Need a developer who understands both the mission and the system?</h2>
+      <a class="button button-light" href="mailto:career.parajuli@gmail.com">career.parajuli@gmail.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 
-                <!-- Experience Block 5 -->
-                            <div  class="experience-block">
-                                <h2 >High School Science and Technology Teacher</h2>
-                                <p><strong>Duration:</strong> 04/2009 - 11/2014</p>
-                                <p><strong>Responsibilities:</strong></p>
-                                <ul>
-                                    <li>
-                                       Guided 30+ high school students annually in science and computer science, elevating problem-solving 
-                                        skills, with 85% achieving improved grades
-                                    </li>
-                                    <li>
-                                       Orchestrated experiments, boosting scientific knowledge and promoting creativity, resulting in a 
-                                        20% rise in student engagement
-                                    </li>
-                                    <li>
-                                        Cultivated a culture of creative thinking, where students developed critical skills, with 90% 
-                                        expressing increased confidence in problem-solving
-                                    </li>
-                                </ul>
-                            </div>
-            
-    </main>
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <div><strong>Ujjwal Parajuli</strong><span>Power Platform Developer · U.S. Army Reserve Sergeant</span></div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ujjwalparajuli" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/careerparajuli" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="section-shell footer-bottom">© <span id="year"></span> Ujjwal Parajuli. Built with purpose.</div>
+  </footer>
 
-    <main id="skills">
-        <section class="skills-container">
-            <!-- Front-End Skills -->
-            <div class="skill-category">
-                <h2>Front-End</h2>
-                <div class="skill-item">
-                    <img src="./html5.png" alt="HTML5">
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./css3.png" alt="CSS3">
-                    <h3>CSS3</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./javaScript.png" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./react.png" alt="React">
-                    <h3>React</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./bootstrap.png" alt="Bootstrap">
-                    <h3>Bootstrap</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./jQuery.png" alt="JQuery">
-                    <h3>jQuery</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./dom.png" alt="DOM">
-                    <h3>DOM</h3>
-                </div>
-
-            </div>
-
-            <!-- Back-End Skills -->
-            <div class="skill-category">
-                <h2>Back-End</h2>
-                <div class="skill-item">
-                    <img src="./nodejs.png" alt="Node.js">
-                    <h3>Node.js</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./expressjs.png" alt="Express.js">
-                    <h3>Express.js</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./mongodb.png" alt="mongoDB">
-                    <h3>mongoDB</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./mongoose.png" alt="moongoose">
-                    <h3>moongoose</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./restapi.png" alt="RESTful API">
-                    <h3>RESTful API</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./mysql.png" alt="mySQL">
-                    <h3>mySQL</h3>
-                </div>
-
-            </div>
-
-            <!-- Programming Languages -->
-            <div class="skill-category">
-                <h2>Programming Languages</h2>
-                <div class="skill-item">
-                    <img src="./java.png" alt="Java">
-                    <h3>Java</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./r.png" alt="R">
-                    <h3>R (Self-learning)</h3>
-                </div>
-            </div>
-
-            <!-- Development Tools -->
-            <div class="skill-category">
-                <h2>Development Tools</h2>
-                <div class="skill-item">
-                    <img src="./vscode.png" alt="VS Code">
-                    <h3>VS Code</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./github.png" alt="GitHub">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./git.png" alt="Git">
-                    <h3>Git</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./postman.png" alt="Postman">
-                    <h3>Postman</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./eclipse.png" alt="Eclipse">
-                    <h3>Eclipse</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="./atom.png" alt="Atom">
-                    <h3>Atom</h3>
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-
-    <main id="projects">
-        <section class="projects-container">
-            <!-- Project 1: Aims Dispatcher -->
-            <div class="project">
-                <!-- <img src="aims-dispatcher.jpg" alt="Aims Dispatcher"> -->
-                <h3>Aims Dispatcher</h3>
-
-                <ul>
-                    <li>
-                        Developed a client-server-based Android application using Java and SQLite for the AIMS
-                        Dispatcher project.
-                    </li>
-                    <li>
-                        Integrated Here API to provide real-time delivery locations during pickup and delivery routes,
-                        optimizing fuel dispatching.
-
-                    </li>
-                    <li>
-                        Implemented image capturing, barcode scanning, and customer signature capture for accurate data
-                        validation, resulting in streamlined operations and improved delivery accuracy.
-                    </li>
-                </ul>
-
-                <div class="image-gallery">
-                    <img src="./page1.jpg" alt="aims project home page">
-                    <img src="./page2.jpg" alt="aims project all trips page">
-                    <img src="./page3.jpg" alt="aims project source page">
-                    <img src="./page4.jpg" alt="aims project site page">
-                    <img src="./page5.jpg" alt="aims project source detail page">
-                    <img src="./page6.jpg" alt="aims project form page">
-                    <img src="./page7.jpg" alt="aims project navigation page">
-                    <img src="./page8.jpg" alt="aims project profile page">
-
-                </div>
-
-            </div>
-
-            <!-- Project 2: Drum Kit -->
-            <div class="project">
-                <h3>Drum Kit</h3>
-                <ul>
-                    <li>
-                        Drum kit is a fun Front End Programming that lets us play drum using mouse and keyboard
-                    </li>
-                    <li>
-                        Designed using HTML5, CSS3, javaScript, and DOM.
-                    </li>
-
-                </ul>
-                <img src="./drumKit.png" alt="drum kit image">
-
-            </div>
-
-            <!-- Project 3: Simon Game -->
-            <div class="project">
-                <h3>Simon Game</h3>
-
-                <ul>
-                    <li>
-                        Simon Game is a classic memory game where we follow the sequence of colors and sounds.
-                    </li>
-                    <li>
-                        Designed using HTML5, CSS3, JavaScript, and DOM.
-                    </li>
-
-                </ul>
-
-                <img src="./simon.png" alt="drum kit image">
-            </div>
-        </section>
-    </main>
-
-
-
-    <main id="others">
-        <section class="military-background">
-            <!-- Military Background -->
-            <div>
-                <h2>Horizontal Construction Engineer</h2>
-                <p><strong>Duration:</strong> 11/2022 - Present</p>
-                <p><strong>Responsibilities:</strong></p>
-                <ul>
-                    <li>
-                        Demonstrated exceptional leadership and teamwork skills, ensuring seamless coordination within
-                        diverse teams during military operations. </li>
-                    <li>
-                        Thrived in high-pressure environments, managing multiple priorities, and consistently delivering
-                        exceptional results within tight deadlines.
-                    </li>
-                    <li>
-                        Utilized problem-solving and critical thinking abilities, upholding discipline, and precision
-                        during military projects.
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-    </main >
-
-
-    <footer>
-        <ul>
-            <li><a href="mailto:career.parajuli@gmail.com " target="_blank">Mail</a></li>
-            <li><a href="https://www.linkedin.com/in/ujjwalparajuli" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/careerparajuli" target="_blank">GitHub</a></li>
-        </ul>
-
-
-        <script src="index.js"></script>
-    </footer>
-
+  <script src="index.js"></script>
 </body>
-
 </html>
