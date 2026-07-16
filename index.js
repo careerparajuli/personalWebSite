@@ -5,8 +5,8 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matc
 const typedText = document.getElementById('typed-text');
 const identities = [
   'Microsoft Power Platform Developer.',
-  'Sergeant in the U.S. Army Reserve.',
-  'Proud husband to a future pharmacist.'
+  'proud service member serving in the Army Reserve.',
+  'proud husband whose wife is in the medical field.'
 ];
 
 const wait = milliseconds => new Promise(resolve => window.setTimeout(resolve, milliseconds));
