@@ -1,28 +1,47 @@
-/*
-const text = "Hi!, I am Ujjwal Parajuli, a full stack developer.";
-
-const textContainer = document.getElementById("typewriter-text");
-
-function typeWriter(text, i) {
-  if (i < text.length) {
-    textContainer.innerHTML += text.charAt(i);
-    const audio = new Audio("keyboard_sound.mp3");
-    audio.play();
-    setTimeout(function () {
-      typeWriter(text, i + 1);
-    }, 100); // Adjusting the typing speed here (milliseconds)
-  }
-}
-
-// Starting the typing animation when the page loads
-window.onload = function () {
-  typeWriter(text, 0);
-};
-*/
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const typedText = document.getElementById('typed-text');
+const identities = [
+  'Microsoft Power Platform Developer.',
+  'Sergeant in the U.S. Army Reserve.',
+  'Proud husband to a future pharmacist.'
+];
+
+const wait = milliseconds => new Promise(resolve => window.setTimeout(resolve, milliseconds));
+
+async function typeIdentity(text) {
+  for (const character of text) {
+    typedText.textContent += character;
+    await wait(character === ' ' ? 42 : 66);
+  }
+}
+
+async function deleteIdentity() {
+  while (typedText.textContent.length) {
+    typedText.textContent = typedText.textContent.slice(0, -1);
+    await wait(35);
+  }
+}
+
+async function rotateIdentities() {
+  if (reducedMotion) {
+    typedText.textContent = identities[0];
+    return;
+  }
+
+  let index = 0;
+  while (true) {
+    await typeIdentity(identities[index]);
+    await wait(1900);
+    await deleteIdentity();
+    await wait(350);
+    index = (index + 1) % identities.length;
+  }
+}
+
+rotateIdentities();
 
 const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 20);
 updateHeader();
