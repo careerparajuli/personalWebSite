@@ -1,70 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujjwal Parajuli | Professional Profile</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ujjwal Parajuli — Power Platform &amp; SharePoint Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <header class="header">
-            <h1>Ujjwal Parajuli</h1>
-            <p class="title">Power Platform Developer | U.S. Army Reserve Sergeant</p>
-            <div class="contact">
-                <span>career.parajuli@gmail.com</span> | <span>(307) 220-1912</span> | <span>Secret Clearance Active</span>
-            </div>
-        </header>
 
-        <section class="section">
-            <h2>Professional Summary</h2>
-            <p>Power Platform and SharePoint Developer and U.S. Army Reserve Sergeant with over 5 years of experience supporting DoD environments. Specialized in secure enterprise applications, workflow automation, and modernizing legacy processes to deliver mission-critical solutions.</p>
-        </section>
+<div class="grain"></div>
 
-        <section class="section">
-            <h2>Experience</h2>
-            
-            <div class="job">
-                <h3>Power Apps & SharePoint Developer (Contractor)</h3>
-                <p class="meta">Air Force Research Laboratory, WPAFB, OH | 04/23 - 06/26[cite: 1]</p>
-                <ul>
-                    <li>Architected "Unfunded Requirements (UFR)" app, reducing approval cycle times by 40%[cite: 1].</li>
-                    <li>Delivered DoD-compliant solutions using Power Platform and Dataverse[cite: 1].</li>
-                    <li>Automated data synchronization and reporting, improving efficiency by 20%[cite: 1].</li>
-                    <li>Managed ALM and Dataverse schema architecture across DEV, TEST, and PROD[cite: 1].</li>
-                </ul>
-            </div>
+<header class="nav">
+  <a href="#top" class="nav__mark">PJ<span>_</span></a>
+  <nav class="nav__links">
+    <a href="#domains">Domains</a>
+    <a href="#log">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-            <div class="job">
-                <h3>Information Technology Specialist (Sergeant)</h3>
-                <p class="meta">USAR-558th Signal Company, Maineville, OH | 11/22 - Present[cite: 1]</p>
-                <ul>
-                    <li>Administered secure network systems and servers in accordance with DoD cybersecurity policies[cite: 1].</li>
-                    <li>Mentored junior Soldiers in technical troubleshooting and cybersecurity best practices[cite: 1].</li>
-                </ul>
-            </div>
+<main id="top">
 
-            <div class="job">
-                <h3>Full Stack Developer</h3>
-                <p class="meta">Algorizin Inc, New York, NY | 10/21 - 05/23[cite: 1]</p>
-                <ul>
-                    <li>Deployed compliance tracking application, reducing regulatory violations by 30%[cite: 1].</li>
-                    <li>Developed MERN stack applications that increased user engagement by 25%[cite: 1].</li>
-                </ul>
-            </div>
-        </section>
+  <!-- HERO — styled as an access / status panel -->
+  <section class="panel" aria-label="Profile overview">
+    <div class="panel__frame">
+      <div class="panel__row panel__row--top">
+        <span class="mono tag tag--active">● CLEARANCE: SECRET — ACTIVE</span>
+        <span class="mono tag">LOC: BEAVERCREEK, OH</span>
+      </div>
 
-        <section class="section">
-            <h2>Skills & Education</h2>
-            <div class="skills-grid">
-                <div>
-                    <strong>Technical:</strong> Power Platform (Apps, Automate, BI, Dataverse), SharePoint, JavaScript, React.js, Node.js, SQL[cite: 1].
-                </div>
-                <div>
-                    <strong>Education:</strong> M.S. AI & Machine Learning (CSU Global, Exp. 2027), B.S. Computer Science (ULM, 2021), B.S. Physics (Tribhuvan University, 2012)[cite: 1].
-                </div>
-            </div>
-        </section>
-    </main>
+      <h1 class="panel__name">Ujjwal Parajuli</h1>
+      <p class="panel__alias mono">// call sign: PJ</p>
+
+      <p class="panel__role">Power Platform &amp; SharePoint Developer <span class="divider">·</span> U.S. Army Reserve Sergeant</p>
+
+      <p class="panel__summary">
+        I build secure, mission-critical applications for Department of Defense environments —
+        centralizing manual processes into governed systems on Power Apps, Power Automate, Power BI,
+        Dataverse, and SharePoint Online. Five-plus years turning spreadsheets and tribal knowledge
+        into role-based, auditable, real-time platforms.
+      </p>
+
+      <dl class="panel__meta mono">
+        <div><dt>Experience</dt><dd>5+ years, DoD environments</dd></div>
+        <div><dt>Stack</dt><dd>Power Platform · SharePoint · MERN</dd></div>
+        <div><dt>Status</dt><dd>Currently serving, USAR 558th Signal Co.</dd></div>
+      </dl>
+
+      <div class="panel__contact mono">
+        <a href="mailto:career.parajuli@gmail.com">career.parajuli@gmail.com</a>
+        <a href="https://linkedin.com/in/ujjwalparajuli" target="_blank" rel="noopener">linkedin.com/in/ujjwalparajuli</a>
+        <span>(307) 220-1912</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" aria-label="About">
+    <p class="about__lead">
+      What I do, plainly: I take processes that live in spreadsheets, email threads, and
+      institutional memory, and rebuild them as governed applications — with the access controls,
+      audit trail, and reliability a cleared environment requires.
+    </p>
+  </section>
+
+  <!-- DOMAINS — signature interactive schema diagram -->
+  <section class="domains" id="domains" aria-label="Areas of expertise">
+    <div class="section-head">
+      <span class="mono eyebrow">01 — SCHEMA</span>
+      <h2>How the work connects</h2>
+      <p class="section-sub">Four domains, one practice. Select a node to see what's inside it — the way I'd design the relationships in Dataverse itself.</p>
+    </div>
+
+    <div class="schema">
+      <svg id="schemaSvg" viewBox="0 0 900 560" role="img" aria-label="Diagram connecting four skill domains to a central practice node">
+        <!-- edges drawn by JS -->
+        <g id="edges"></g>
+        <g id="nodes"></g>
+      </svg>
+
+      <div class="schema__panel" id="schemaDetail">
+        <span class="mono eyebrow">SELECT A NODE</span>
+        <p class="schema__hint">Click any domain in the diagram to view its components.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE LOG -->
+  <section class="log" id="log" aria-label="Experience">
+    <div class="section-head">
+      <span class="mono eyebrow">02 — LOG</span>
+      <h2>Deployment history</h2>
+    </div>
+
+    <div class="entries">
+
+      <article class="entry">
+        <div class="entry__meta mono">
+          <span class="tag tag--complete">COMPLETE</span>
+          <span class="entry__dates">04/2023 – 06/2026</span>
+        </div>
+        <h3>Power Apps &amp; SharePoint Developer <span class="entry__org">— Air Force Research Laboratory, WPAFB, OH</span></h3>
+        <ul>
+          <li>Architected and deployed the "Unfunded Requirements (UFR)" application on Power Apps and Dataverse, replacing manual spreadsheet tracking and cutting approval cycle times by 40%.</li>
+          <li>Led Agile sprints with cross-functional stakeholders to deliver DoD-compliant solutions, implementing role-based access control and governance policy in a cleared environment.</li>
+          <li>Integrated Power Apps, Power Automate, Power BI, Power Pages, Dataverse, and SharePoint Online to automate data sync, workflow notifications, and reporting — a 20% gain in operational efficiency.</li>
+          <li>Designed Dataverse schema architecture — table relationships, data modeling, business rules — and managed application lifecycle across DEV, TEST, and PROD.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry__meta mono">
+          <span class="tag tag--active">ACTIVE</span>
+          <span class="entry__dates">11/2022 – Present</span>
+        </div>
+        <h3>Information Technology Specialist, Sergeant <span class="entry__org">— USAR, 558th Signal Company, Maineville, OH</span></h3>
+        <ul>
+          <li>Administer secure network systems, servers, and user accounts under Army and DoD cybersecurity policy across classified and unclassified environments.</li>
+          <li>Supervise and mentor junior Soldiers in system configuration, cybersecurity practice, and troubleshooting.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry__meta mono">
+          <span class="tag tag--complete">COMPLETE</span>
+          <span class="entry__dates">10/2021 – 05/2023</span>
+        </div>
+        <h3>Full Stack Developer <span class="entry__org">— Algorizin Inc, New York, NY</span></h3>
+        <ul>
+          <li>Built a compliance tracking web app with JavaScript (ES6+) and RESTful APIs, reducing regulatory violations by 30%.</li>
+          <li>Shipped a full-stack MERN application — backend APIs, database schema, AI-driven features — increasing user engagement by 25% and cutting fraudulent activity by 15%.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section class="education" id="education" aria-label="Education and certifications">
+    <div class="section-head">
+      <span class="mono eyebrow">03 — CREDENTIALS</span>
+      <h2>Education &amp; certifications</h2>
+    </div>
+
+    <div class="cred-grid">
+      <div class="cred">
+        <span class="mono cred__tag">M.S.</span>
+        <h4>Artificial Intelligence &amp; Machine Learning</h4>
+        <p class="mono cred__meta">CSU Global · expected 05/2027</p>
+      </div>
+      <div class="cred">
+        <span class="mono cred__tag">B.S.</span>
+        <h4>Computer Science</h4>
+        <p class="mono cred__meta">University of Louisiana Monroe · 05/2021</p>
+      </div>
+      <div class="cred">
+        <span class="mono cred__tag">B.S.</span>
+        <h4>Physics</h4>
+        <p class="mono cred__meta">Tribhuvan University · 12/2012</p>
+      </div>
+      <div class="cred cred--certs">
+        <span class="mono cred__tag">CERT</span>
+        <h4>PL-400, PL-900, AZ-900, CompTIA Security+ CE</h4>
+        <p class="mono cred__meta">Power Platform Developer Associate · Fundamentals · Security</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="contact" id="contact" aria-label="Contact">
+    <div class="section-head">
+      <span class="mono eyebrow">04 — CONTACT</span>
+      <h2>Reach me</h2>
+    </div>
+    <div class="contact__grid">
+      <a class="contact__item" href="mailto:career.parajuli@gmail.com">
+        <span class="mono">EMAIL</span>
+        <span>career.parajuli@gmail.com</span>
+      </a>
+      <a class="contact__item" href="https://linkedin.com/in/ujjwalparajuli" target="_blank" rel="noopener">
+        <span class="mono">LINKEDIN</span>
+        <span>linkedin.com/in/ujjwalparajuli</span>
+      </a>
+      <div class="contact__item">
+        <span class="mono">PHONE</span>
+        <span>(307) 220-1912</span>
+      </div>
+      <div class="contact__item">
+        <span class="mono">LOCATION</span>
+        <span>Beavercreek, OH 45434</span>
+      </div>
+    </div>
+    <p class="mono foot-note">Ujjwal Parajuli — updated 2026.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
